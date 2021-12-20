@@ -181,7 +181,7 @@ public class KakaoExampleController {
      * 친구톡 이미지 단건 발송, send many 호환
      * 친구톡 내 버튼은 최대 5개까지만 생성 가능합니다.
      */
-    @GetMapping("/send-cti")
+    @PostMapping("/send-cti")
     public SingleMessageSentResponse sendOneCti() throws IOException {
         ClassPathResource resource = new ClassPathResource("static/cti.jpg");
         File file = resource.getFile();

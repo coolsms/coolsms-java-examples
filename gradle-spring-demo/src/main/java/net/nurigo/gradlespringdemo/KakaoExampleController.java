@@ -3,10 +3,8 @@ package net.nurigo.gradlespringdemo;
 import net.nurigo.sdk.NurigoApp;
 import net.nurigo.sdk.message.exception.NurigoMessageNotReceivedException;
 import net.nurigo.sdk.message.model.*;
-import net.nurigo.sdk.message.request.MultipleMessageSendingRequest;
 import net.nurigo.sdk.message.request.SingleMessageSendingRequest;
 import net.nurigo.sdk.message.response.MultipleDetailMessageSentResponse;
-import net.nurigo.sdk.message.response.MultipleMessageSentResponse;
 import net.nurigo.sdk.message.response.SingleMessageSentResponse;
 import net.nurigo.sdk.message.service.DefaultMessageService;
 import org.springframework.core.io.ClassPathResource;
@@ -37,7 +35,8 @@ public class KakaoExampleController {
      * 발급받은 API KEY와 API Secret Key를 사용해주세요.
      */
     public KakaoExampleController() {
-        this.messageService = NurigoApp.INSTANCE.initialize("INSERT API KEY", "INSERT API SECRET KEY", "https://api.coolsms.co.kr");
+        // 반드시 계정 내 등록된 유효한 API 키, API Secret Key를 입력해주셔야 합니다!
+        this.messageService = NurigoApp.INSTANCE.initialize("INSERT_API_KEY", "INSERT_API_SECRET_KEY", "https://api.coolsms.co.kr");
     }
 
     /**

@@ -22,7 +22,7 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 
-	implementation("net.nurigo:sdk:4.2.7")
+	implementation("net.nurigo:sdk:4.3.0")
 }
 
 tasks.withType<KotlinCompile> {

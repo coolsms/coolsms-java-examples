@@ -9,16 +9,16 @@
 <dependency>
     <groupId>net.nurigo</groupId>
     <artifactId>sdk</artifactId>
-    <version>4.2.7</version>
+    <version>4.3.0</version>
 </dependency>
 ```
 
 ### Gradle
 ```groovy
-implementation 'net.nurigo:sdk:4.2.7'
+implementation 'net.nurigo:sdk:4.3.0'
 ```
 
 ### Gradle(kotlin)
 ```kotlin
-implementation("net.nurigo:sdk:4.2.7")
+implementation("net.nurigo:sdk:4.3.0")
 ```

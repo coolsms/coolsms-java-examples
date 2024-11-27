@@ -95,6 +95,18 @@ public class KakaoExampleController {
             message.setText("한글 45자, 영자 90자 이하 입력되면 자동으로 SMS타입의 메시지가 추가됩니다." + i);
             message.setKakaoOptions(kakaoOption);
 
+            // 기본적으로 실패 시 같은 내용으로 문자 전송을 요청하나,
+            // 같은 내용이 아닌 다른 내용으로 대체발송을 원한다면 replacements 값을 설정해줍니다.
+            /*
+            Message replacementMessage = new Message();
+            replacementMessage.setFrom("발신번호 입력");
+            replacementMessage.setTo("수신번호 입력");
+            replacementMessage.setText("실패 시 대체 발송 될 메시지입니다.");
+            ArrayList<Message> replacmentMessages = new ArrayList<>();
+            replacmentMessages.add(replacementMessage);
+            message.setReplacements(replacmentMessages);
+            */
+
             messageList.add(message);
         }
 

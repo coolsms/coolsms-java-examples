@@ -86,6 +86,20 @@ class KakaoExampleController {
                 text = "한글 45자, 영자 90자 이하 입력되면 자동으로 SMS타입의 메시지가 추가됩니다.$i",
                 kakaoOptions = kakaoOption
             )
+
+            // 기본적으로 실패 시 같은 내용으로 문자 전송을 요청하나,
+            // 같은 내용이 아닌 다른 내용으로 대체발송을 원한다면 replacements값을 설정해줍니다.
+            /*
+            val replacementMessage = Message(
+                from = "발신번호 입력",
+                to = "수신번호 입력",
+                text = "실패 시 대체 발송 될 메시지입니다."
+            )
+            val replacmentMessages = ArrayList<Message>()
+            replacmentMessages.add(replacementMessage)
+            message.replacements = replacmentMessages
+            */
+
             messageList.add(message)
         }
         try {

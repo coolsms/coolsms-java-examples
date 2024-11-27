@@ -15,7 +15,7 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	implementation 'net.nurigo:sdk:4.3.0'
+	implementation 'net.nurigo:sdk:4.3.2'
 }
 
 tasks.named('test') {
